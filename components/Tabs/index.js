@@ -9,7 +9,7 @@
 //    <div class="tab">topic here</div>
 window.addEventListener('load', (e)=>{ 
     const container = document.querySelector('.topics');
-    console.log(container);
+    //console.log(container);
 
 
     const tabItem = axios.get('https://lambda-times-backend.herokuapp.com/topics')
@@ -22,7 +22,7 @@ window.addEventListener('load', (e)=>{
             let thirdTab = TabsBar (tabdata [2]);
             let forthTab = TabsBar (tabdata [3]);
             let fifthTab = TabsBar (tabdata [4]);
-
+            //add components to topics class
              container.appendChild(firstTab);
              container.appendChild(secondTab);
              container.appendChild(thirdTab);
